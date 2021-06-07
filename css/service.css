@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.main{
+display:flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+
+}
+.container{
+  
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+  background-color: azure;
+  text-align: center;
+margin: 30px;
+padding: 30px;
+transition: 3s;
+
+}
+.img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+ 
+margin-bottom: 10px;
+padding: 20px;
+background-position: center center;
+}
+
+
+
+.h1{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 48px;
+  font-style: italic;
+}
+.text{
+  font-family:fantasy;
+}
+.text p{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.container:hover{
+  background-color: rgb(43, 226, 83);
+  color:#fff;
+}
+.img img{
+  width: 50px;
+  height: 40px;
+}
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Roboto+Mono:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-weight: bold;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.header{
+    border-bottom: 1px solid #E2E8F0;
+    z-index:-1;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+   
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 2rem;
+cursor: pointer;
+    color: #475569;
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    color: #482ff7;
+   
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top:4rem;
+        flex-direction: column;
+      background-color: white;
+        width: 100%;
+      
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+       
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+
+}
+  

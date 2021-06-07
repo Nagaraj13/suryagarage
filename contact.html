@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surya's Garage</title>
+  <link rel="stylesheet" href="./css/contact.css">
+</head>
+
+<body>
+
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">For queries and complaints</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a  class="nav-link Home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a  class="nav-link Service">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a  class="nav-link producat">Product</a>
+                </li>
+                <li class="nav-item">
+                    <a  class="nav-link contact">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+</header>
+
+
+
+  <div class="main">
+         
+   
+      <div>
+
+        <h1>contact us</h1>
+
+      </div>
+                            <div>
+
+                            <!--form-->
+                                  <form class="form-container">
+                                    <label>Email Id</label>
+                                    <input type="email" class="mail " placeholder="e-mail id">
+
+                                    
+
+                                    <label for="subject">feedback</label>
+                                    <textarea id="feedback" name="feedback"  placeholder="Write Something.." style="height:100px"></textarea>
+                         
+                         
+                                    <button  id="btn-add">Submit</button>
+                                  </form>
+                                </div>
+                                          <div class="text">
+
+
+                                            <h3>Address</h3>
+                                            <p>No.1/792, 7th Street<br>Cholamandala Devi Nagar<br>Injambakkam, chennai-115. </p>
+                                    
+                                          </div>
+                                          <!--end-->
+                          
+                          
+       
+
+  </div>
+
+  <script>
+
+
+
+let homebtn=document.querySelector(".Home");
+
+homebtn.addEventListener('click',()=>{
+
+window.location="home.html";
+
+});
+
+
+//below servic
+
+let servicebtn=document.querySelector(".Service");
+
+servicebtn.addEventListener('click',()=>{
+
+  window.location="service.html";
+
+});
+
+//below product
+ let productbtn=document.querySelector(".producat");
+
+ productbtn.addEventListener('click',()=>{
+
+window.location="products.html";
+
+ });
+
+
+ let contactsbtn=document.querySelector(".contact");
+
+ contactsbtn.addEventListener('click',()=>{
+
+window.location="contact.html";
+
+ });
+
+
+
+
+ 
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+const introheader =document.querySelector(".image-content");
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+   
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+  </script>
+
+</body>
+
+</html>

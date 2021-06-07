@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surya's Garage</title>
+  <link rel="stylesheet" href="./css/service.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">Best in Industry</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a  class="nav-link Home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a  class="nav-link Service">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a  class="nav-link producat">Product</a>
+                </li>
+                <li class="nav-item">
+                    <a  class="nav-link contact">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+</header>
+
+
+<section>
+    <div class="main">
+        <div class="container">
+                    <div class="img">
+                        <img src="./image/delivery.jpeg" alt="1">
+                                </div>
+                    <div class="text">
+                        <span class="h1"><strong>On Time Delivery</strong></span>
+                        <p>Completes work on time<br>Establishes appropriate priorities
+                        </p>
+                    </div>
+
+                    </div>
+          <div class="container">
+                        <div class="img">
+                        <img src="./image/replace.jpeg" alt="1">
+                        </div>
+            <div class="text">
+              <span class="h1"><strong>Assurance</strong></span>
+              <p>I realise that this situation is difficult, but rest-assured we will find a solution for you<br>
+                I would feel the same if this happened to me. We will sort this out
+               
+              </p>
+            </div>
+            </div>
+    
+            
+            <div class="container">
+                <div class="img">
+                    <img src="./image/maintance.jpeg" alt="1">
+                </div>
+              <div class="text">
+                <span class="h1"><strong>Regular Maintainance</strong></span>
+                <p> They perform routine maintenance, troubleshoot problems and make repairs as needed
+                  <br> Maintenance Engineers would also be responsible for removing old equipment and installing new machines
+                </p>
+              </div>
+    
+            </div>
+    
+    
+    
+    
+    
+    
+    
+          </div>
+</section>
+  
+      <script>
+
+
+
+        let homebtn=document.querySelector(".Home");
+        
+        homebtn.addEventListener('click',()=>{
+        
+        window.location="home.html";
+        
+        });
+        
+        
+        //below servic
+        
+        let servicebtn=document.querySelector(".Service");
+        
+        servicebtn.addEventListener('click',()=>{
+        
+            window.location="service.html";
+        
+        });
+        
+        //below product
+         let productbtn=document.querySelector(".producat");
+        
+         productbtn.addEventListener('click',()=>{
+        
+        window.location="products.html";
+        
+         });
+        
+        
+         let contactsbtn=document.querySelector(".contact");
+        
+         contactsbtn.addEventListener('click',()=>{
+        
+        window.location="contact.html";
+        
+         });
+        
+        
+        
+        
+         
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+        const introheader =document.querySelector(".image-content");
+        hamburger.addEventListener("click", mobileMenu);
+        
+        function mobileMenu() {
+            
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+        
+        const navLink = document.querySelectorAll(".nav-link");
+        
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+        
+        function closeMenu() {
+           
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+          </script>
+        
+
+
+
+
+
+
+</body>
+
+</html>
